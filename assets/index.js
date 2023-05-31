@@ -1,5 +1,5 @@
 // Создаем переменную массива
-let array = [
+let arrayDirectors = [
     {
     name: 'Стивен Спилберг',
     career: 'Продюсер, Режиссёр, Актёр, Сценарист, Монтажёр',
@@ -44,11 +44,16 @@ let array = [
     },
 ];
 
+// Добавляем информацию из переменной в html
+
+let bestDirectors = document.querySelector('.bestDirectors');
+console.log(bestDirectors);
+
 // Вызываем метод forEach
 
-array.forEach(function(item, index, array) {
-    // ... делать что-то с item
-  });
+// array.forEach(function(item, index, array) {
+//     // ... делать что-то с item
+//   });
 
 
 
