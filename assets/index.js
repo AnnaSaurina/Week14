@@ -44,17 +44,29 @@ let arrayDirectors = [
     },
 ];
 
-// Добавляем информацию из переменной в html
+// Добавляем информацию о режиссерах из переменной в html
 
 let bestDirectors = document.querySelector('.bestDirectors');
 console.log(bestDirectors);
 
 // Вызываем метод forEach
+// 1. Создаем новый div
+// 
+
+arrayDirectors.forEach((element) => {
+    let elemDirector = document.createElement('div');
+    
+})
+
 
 // array.forEach(function(item, index, array) {
 //     // ... делать что-то с item
 //   });
 
+// Добавляем информацию о фильмах в html
+
+let bestFilm = document.querySelector('.bestFilm');
+console.log(bestFilm);
 
 
 
