@@ -55,8 +55,12 @@ console.log(bestDirectors);
 
 arrayDirectors.forEach((element) => {
     let elemDirector = document.createElement('div');
-    
-})
+    elemDirector = 'elem_director_pack';
+    elemDirector = '
+    <p class = "elem_director_pack">${element.name}</p>'
+    <p class = "elem_director_pack">${element.career}</p>'
+    ;
+});
 
 
 // array.forEach(function(item, index, array) {
