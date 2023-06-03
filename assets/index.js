@@ -51,26 +51,32 @@ console.log(bestDirectors);
 
 // Вызываем метод forEach
 // 1. Создаем новый div
-// 
+// 2. Добавляем класс
 
 arrayDirectors.forEach((element) => {
-    let elemDirector = document.createElement('div');
-    elemDirector = 'elem_director_pack';
-    elemDirector = '
-    <p class = "elem_director_pack">${element.name}</p>'
-    <p class = "elem_director_pack">${element.career}</p>'
-    ;
+    let elemDirector = document.createElement("div");
+    elemDirector.className = 'elem_director_pack';
+    elemDirector.innerHTML = `
+    <p class="elem_director_pack">${element.name}</p>
+    <p class="elem_director_pack">${element.career}</p>
+    <a href="${element.career}" target="_blank">Фильмография</a>`;
+
+    bestDirectors.appendChild(elemDirector);
 });
-
-
-// array.forEach(function(item, index, array) {
-//     // ... делать что-то с item
-//   });
 
 // Добавляем информацию о фильмах в html
 
 let bestFilm = document.querySelector('.bestFilm');
 console.log(bestFilm);
 
-
+// Создаем переменную для получения данных из массива
+// 1. Создаем элемент для добавления информации о фильмах
+// 2. Добавляем разметку для элемента
+let catalogFilm = arrayDirectors.map(function(arrElem) {
+    let sheetFilm = document.createElement("span");
+    sheetFilm.innerHTML = 
+    `<span class="">${arrElem.top_rated_film}</span>`;
+    bestFilm.appendChild(sheetFilm);
+}
+);
 
