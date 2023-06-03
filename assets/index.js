@@ -59,7 +59,7 @@ arrayDirectors.forEach((element) => {
     elemDirector.innerHTML = `
     <p class="elem_director_pack">${element.name}</p>
     <p class="elem_director_pack">${element.career}</p>
-    <a href="${element.career}" target="_blank">Фильмография</a>`;
+    <a class="element_career" href="${element.films}" target="_blank">Фильмография</a>`;
 
     bestDirectors.appendChild(elemDirector);
 });
@@ -75,7 +75,7 @@ console.log(bestFilm);
 let catalogFilm = arrayDirectors.map(function(arrElem) {
     let sheetFilm = document.createElement("span");
     sheetFilm.innerHTML = 
-    `<span class="">${arrElem.top_rated_film}</span>`;
+    `<span class="catalog_film">${arrElem.top_rated_film}, </span>`;
     bestFilm.appendChild(sheetFilm);
 }
 );
