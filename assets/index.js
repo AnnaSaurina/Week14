@@ -57,9 +57,9 @@ arrayDirectors.forEach((element) => {
     let elemDirector = document.createElement("div");
     elemDirector.className = 'elem_director_pack';
     elemDirector.innerHTML = `
-    <p class="elem_director_pack">${element.name}</p>
-    <p class="elem_director_pack">${element.career}</p>
-    <a class="element_career" href="${element.films}" target="_blank">Фильмография</a>`;
+    <p class="elem_director_name">${element.name}</p>
+    <p class="elem_director_career">${element.career}</p>
+    <a class="elem_director_films" href="${element.films}" target="_blank">Фильмография</a>`;
 
     bestDirectors.appendChild(elemDirector);
 });

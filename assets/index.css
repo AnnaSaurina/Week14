@@ -9,15 +9,48 @@ body{
     height: 100%;
 }
 
+.heading{
+    font-size: 40px;
+}
+
 .heading,
 .bestFilm{
     text-align: center;
 }
 
 .elem_director_pack{
+    border-bottom: 0.5px solid black;
+    display: grid;
     font-weight: bolder;
+    grid-template-areas: "elem_director_name elem_director_name"
+    "elem_director_career elem_director_films";
 }
 
-.element_career{
-    color: lightgrey;
+.elem_director_name{
+    grid-area: elem_director_name;
+    font-size: 25px;
+    font-weight: bold;
 }
+
+.elem_director_career{
+    align-self: center;
+    grid-area: elem_director_career;
+}
+
+.elem_director_films{
+    color: rgb(219, 102, 60);
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.bestFilmHeading{
+    font-size: 30px;
+}
+
+.catalog_film{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
