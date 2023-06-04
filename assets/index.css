@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/image/4531.jpg);
+    background-image: url(/assets/image/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,5 +19,5 @@ body{
 }
 
 .element_career{
-    color: white;
+    color: lightgrey;
 }
